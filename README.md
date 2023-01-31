@@ -11,7 +11,7 @@ Mangler:
 (Fixed)Der burde selvfølgelig også håndteres at der ikke kan skrives '-' i første eller anden del af cpr.  
 Der burde nok have være try/catch i alle events, såsom OnAppearing.  
 Normalt har jeg en ToDTO function, der bare tager en model og returnerer en DTO, i mine BIZ klasser.  
-Der skulle være lavet ViewModel til til alle Views og binding på alle ViewProperties.  
+Der skulle være lavet ViewModel til til alle Views og binding på ViewProperties.  
 
 
 
