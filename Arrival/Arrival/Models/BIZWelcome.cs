@@ -1,8 +1,6 @@
 ﻿using Arrival._Statics;
 using Arrival.DB;
 using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace Arrival.Models
 {
@@ -21,10 +19,9 @@ namespace Arrival.Models
             DTOWelcome dto = new DTOWelcome();
             dto.Welcome = "Velkommen " + _c.FirstName + " " + _c.LastName;
 
-            if (CheckHelper.IsEven(cpr))
-                dto.Message = "Gå venligst til receptionen,hvor der ligger besked til dig";
-            else
-                dto.Message = "Tag venligst plads i venteværelset.";
+            dto.Message = CheckHelper.IsEven(cpr) ?
+                 "Gå venligst til receptionen,hvor der ligger besked til dig." :
+                 "Tag venligst plads i venteværelset.";
 
             return dto;
         }
