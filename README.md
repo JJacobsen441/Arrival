@@ -13,7 +13,7 @@ Der burde nok have være try/catch i alle events, såsom OnAppearing.
 Normalt har jeg, i mine BIZ klasser, en ToDTO function, der bare tager en model og returnerer en DTO.  
 Jeg tror jeg fik blandet models og DTOer sammen i denne opgave.  
 Der skulle være lavet ViewModel til til alle Views og binding på ViewProperties.  
-Normalt bruger jeg bare using omkring DBContext og DB kald, det burde jeg også have gjort her. Using havde sørget for kalde Dispose.  
+Normalt bruger jeg using omkring DBContext og DB kald, det burde jeg også have gjort her. Using havde sørget for kalde Dispose.  
 (se ovenfor)ArrivalDatabase skulle være anderledes designet, men det var et nyt setup og jeg var træt.  
 
 
