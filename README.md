@@ -13,7 +13,8 @@ Der burde nok have være try/catch i alle events, såsom OnAppearing.
 Normalt har jeg en ToDTO function, der bare tager en model og returnerer en DTO, i mine BIZ klasser.  
 Jeg tror jeg fik blandet models og DTOer sammen i denne opgave.  
 Der skulle være lavet ViewModel til til alle Views og binding på ViewProperties.  
-
+Jeg skulle selvfølgelig have kaldet Dispose på SQLiteConnection Database, jeg er vant til bare at bruge using, men har glemt det da det er et nyt setup.  
+Jeg skulle have håndteret oprettelsen af SQLiteConnection Database anderledes, jeg er lidt usikker på om den skulle  have være static eller ej, måske Singleton.  
 
 
 Ellers en sjov opgave, håber det kan bruges.  
