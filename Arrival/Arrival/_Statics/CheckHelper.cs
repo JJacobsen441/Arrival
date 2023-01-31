@@ -71,6 +71,30 @@ namespace Arrival._Statics
             return last == "-";
         }
 
+        public static bool NeedsDash(string cpr)
+        {
+            if (cpr.IsNull())
+                return false;
+
+            return cpr.Count() == 6;
+        }
+
+        public static bool CheckDash(string cpr) 
+        {
+            bool ok = true;
+
+            if (cpr.Where(x=>"" + x == "-").Count() > 1)
+                ok &= false;
+
+            if (cpr.Length != 7 && IsDash(cpr))
+                ok &= false;
+
+            if (!(cpr.IndexOf('-') == 6 || cpr.IndexOf('-') == -1))
+                ok &= false;
+
+            return ok;
+        }
+
         public static bool FirstPart(string cpr)
         {
             if (cpr.IsNullOrEmpty())
@@ -119,18 +143,11 @@ namespace Arrival._Statics
             if (!FirstPart(cpr) || !SecondPart(cpr))
                 ok &= false;
 
-            if(!Modulus11(cpr))
+            if (!Modulus11(cpr))
                 ok &= false;
 
             return ok;
         }
 
-        public static bool NeedsDash(string cpr)
-        {
-            if (cpr.IsNull())
-                return false;
-
-            return cpr.Count() == 6;
-        }
     }
 }

@@ -7,8 +7,8 @@ ArrivalDatabase klassen har noget kode jeg fandt på nettet og var oprindeligt s
 jeg har omskrevet det så det ligger mere til mit niveau.  
 Jeg har dog nogenlunde fod på async, Delegates, Func og Action det er bare sjældent jeg selv benytter mig af disse.  
 
-Mangler:
-Der burde selvfølgelig også håndteres at der ikke kan skrives '-' i første eller anden del af cpr.  
+Mangler:  
+(Fixed)Der burde selvfølgelig også håndteres at der ikke kan skrives '-' i første eller anden del af cpr.  
 
 Ellers en sjov opgave, håber det kan bruges.  
  

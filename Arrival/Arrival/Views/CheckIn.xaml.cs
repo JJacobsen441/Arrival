@@ -71,7 +71,13 @@ namespace Arrival.Views
                 if (cpr.IsNullOrEmpty())
                     return;
 
-                if (CheckHelper.FirstPart(cpr) && CheckHelper.SecondPart(cpr) && cpr.Count() < 11)
+                if(!CheckHelper.CheckDash(cpr))
+                {
+                    string _s = cpr_old;
+                    Entry1.BindingContext = new { MyEntry1 = _s };
+                    return;
+                }
+                else if (CheckHelper.FirstPart(cpr) && CheckHelper.SecondPart(cpr) && cpr.Count() < 11)
                 {
                     if (!CheckHelper.IsDash(cpr_old) && CheckHelper.NeedsDash(cpr))
                         cpr += "-";
