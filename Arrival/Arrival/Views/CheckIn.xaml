@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Arrival.Views.CheckIn">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label x:Name="Label1" Text="CheckIn" FontSize="Title"
+                    HorizontalOptions="CenterAndExpand" />
+            <Entry x:Name="Entry1" Placeholder="indtast cpr" 
+                    Text="{Binding MyEntry1, Mode=TwoWay}"
+                    VerticalOptions="CenterAndExpand" 
+                    HorizontalOptions="CenterAndExpand" />
+            <Button x:Name="Button1" Clicked="OnButton1Clicked" 
+                    Text="Click" VerticalOptions="CenterAndExpand" 
+                    HorizontalOptions="CenterAndExpand"></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
