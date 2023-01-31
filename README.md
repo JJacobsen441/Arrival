@@ -10,11 +10,11 @@ Jeg har dog nogenlunde fod på async, Delegates, Func og Action det er bare sjæ
 Mangler:  
 (Fixed)Der burde selvfølgelig også håndteres at der ikke kan skrives '-' i første eller anden del af cpr.  
 Der burde nok have være try/catch i alle events, såsom OnAppearing.  
-Normalt har jeg en ToDTO function, der bare tager en model og returnerer en DTO, i mine BIZ klasser.  
+Normalt har jeg, i mine BIZ klasser, en ToDTO function, der bare tager en model og returnerer en DTO.  
 Jeg tror jeg fik blandet models og DTOer sammen i denne opgave.  
 Der skulle være lavet ViewModel til til alle Views og binding på ViewProperties.  
-Jeg skulle selvfølgelig have kaldet Dispose på SQLiteConnection Database. Normalt bruger jeg bare using, og skulle selvfølelig bare have gjort det samme her.  
-(kig oven for)Jeg skulle have håndteret oprettelsen af SQLiteConnection Database anderledes, jeg er lidt usikker på om den skulle  have være static eller ej, måske Singleton.  
+Normalt bruger jeg bare using omkring DBContext og DB kald, det burde jeg også have gjort her. Using havde sørget for kalde Dispose.  
+(se ovenfor)ArrivalDatabase skulle være anderledes designet, men det var et nyt setup og jeg var træt.  
 
 
 Ellers en sjov opgave, håber det kan bruges.  
